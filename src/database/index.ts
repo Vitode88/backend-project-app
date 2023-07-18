@@ -20,7 +20,7 @@ const connectDB = (mongoUrl: string) =>
         mongoose.connect(mongoUrl, {}).then(
             () => {
                 console.log(
-                    chalk.bgBlue.white("Successfully connected with database")
+                    chalk.bgGreen.white("Successfully connected with database")
                 );
                 resolve(true);
             },
